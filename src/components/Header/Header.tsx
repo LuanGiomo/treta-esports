@@ -4,7 +4,35 @@ import tretaLogo from "../../assets/treta.svg";
 import SocialMediaIcons from "./SocialMediaIcons/SocialMediaIcons.tsx";
 import styles from "./Header.module.css";
 
+export type Links = {
+  name: string;
+  path: string;
+};
+
 const Header = () => {
+  const navbarLinks: Links[] = [
+    {
+      name: "home",
+      path: `/`,
+    },
+    {
+      name: "teams",
+      path: `/teams`,
+    },
+    {
+      name: "shop",
+      path: `/shop`,
+    },
+    {
+      name: "about",
+      path: `/about`,
+    },
+    {
+      name: "contact",
+      path: `/contact`,
+    },
+  ];
+
   const socialMediaNames = [
     "discord",
     "instagram",
@@ -23,7 +51,7 @@ const Header = () => {
             alt="Treta logo"
           />
         </Link>
-        <Navbar />
+        <Navbar links={navbarLinks} />
         <SocialMediaIcons socialMediaInfo={socialMediaNames} />
       </div>
     </header>

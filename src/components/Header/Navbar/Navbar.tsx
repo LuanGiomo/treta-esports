@@ -1,39 +1,16 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import { Links } from "../Header";
 
-interface Links {
-  name: string;
-  path: string;
+interface Props {
+  links: Links[];
 }
 
-const Navbar = () => {
-  const navbarLinks: Links[] = [
-    {
-      name: "home",
-      path: `/`,
-    },
-    {
-      name: "teams",
-      path: `/teams`,
-    },
-    {
-      name: "shop",
-      path: `/shop`,
-    },
-    {
-      name: "about",
-      path: `/about`,
-    },
-    {
-      name: "contact",
-      path: `/contact`,
-    },
-  ];
-
+const Navbar = ({ links }: Props) => {
   return (
     <nav className={styles.navbar}>
-      {navbarLinks.map((link) => (
-        <li className={styles.navbar__list}>
+      {links.map((link) => (
+        <li key={link.name} className={styles.navbar__list}>
           <NavLink
             className={({ isActive }) =>
               isActive

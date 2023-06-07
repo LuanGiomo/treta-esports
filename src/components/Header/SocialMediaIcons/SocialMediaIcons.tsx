@@ -9,6 +9,7 @@ const SocialMediaIcons = ({ socialMediaInfo }: Props) => {
     <div className={styles.socialMedia}>
       {socialMediaInfo.map((sm) => (
         <img
+          key={sm}
           className={styles.socialMedia__image}
           src={`/src/assets/social-media/${sm}.svg`}
           alt={`${sm} logo`}
