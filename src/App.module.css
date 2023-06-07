@@ -1,0 +1,17 @@
+@media (min-width: 1400px) {
+  .content {
+    border-inline: 1px solid #4f4f4f;
+    width: 1400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    width: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  margin: 0 auto;
+}

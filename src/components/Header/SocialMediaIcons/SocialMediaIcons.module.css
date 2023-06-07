@@ -1,0 +1,16 @@
+.socialMedia {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.socialMedia__image {
+  width: auto;
+  height: 16px;
+}
+
+@media (max-width: 992px) {
+  .socialMedia {
+    display: none;
+  }
+}

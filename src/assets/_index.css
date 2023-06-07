@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Syne:wght@800&display=swap");
+
+:root {
+  --c-primary: #c53030;
+  --c-primary-dark: #511515;
+  --c-gray-tertiary: #686868;
+  --c-white: #dfdfdf;
+  --c-black: #040404;
+
+  color-scheme: light dark;
+  background-color: var(--c-black);
+  color: var(--c-white);
+  text-rendering: optimizeLegibility;
+
+  font-family: "Syne", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #f9f9f9;
+  }
+}
