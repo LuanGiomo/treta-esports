@@ -39,11 +39,6 @@ const About = () => {
           fundador, enquanto nos divertimos dentro e fora dos jogos.
         </p>
       </div>
-      {/* <div className="next-matches">
-            <div className="match"></div>
-            <div className="match"></div>
-            <div className="match"></div>
-          </div> */}
     </div>
   );
 };

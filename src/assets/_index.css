@@ -13,10 +13,10 @@
   color-scheme: light dark;
   background-color: var(--c-black);
   color: var(--c-white);
-  text-transform: uppercase;
-  text-rendering: optimizeLegibility;
 
   font-family: "Syne", sans-serif;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
 }
 
 * {
