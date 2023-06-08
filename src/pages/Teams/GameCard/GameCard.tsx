@@ -19,7 +19,11 @@ const GameCard = ({ games }: Props) => {
           style={{
             backgroundImage: `url(src/assets/backgrounds/${game.shortName}-background.png)`,
           }}
-        ></div>
+        >
+          <span className={styles.game__card__name}>
+            {game.shortName === "csgo" ? "CS:GO" : game.name}
+          </span>
+        </div>
       ))}
     </>
   );

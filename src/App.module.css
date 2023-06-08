@@ -8,7 +8,7 @@
 
 @media (min-width: 1200px) {
   .mainContent {
-    border-inline: var(--border);
+    /* border-inline: var(--border); */
     width: 1200px;
   }
 }

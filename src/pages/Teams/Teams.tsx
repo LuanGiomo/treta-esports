@@ -9,9 +9,12 @@ const Teams = () => {
     { name: "Brawl Stars", shortName: "bs" },
   ];
   return (
-    <div className={styles.games}>
-      <GameCard games={games}></GameCard>
-    </div>
+    <>
+      <div className={styles.games}>
+        <GameCard games={games}></GameCard>
+      </div>
+      {/* <hr /> */}
+    </>
   );
 };
 

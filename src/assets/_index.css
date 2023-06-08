@@ -8,7 +8,8 @@
   --c-white: #dfdfdf;
   --c-black: #040404;
 
-  --border: 1px solid var(--c-gray-secondary);
+  --b1-primary: 1px solid var(--c-primary);
+  --b1-gray: 1px solid var(--c-gray-secondary);
 
   color-scheme: light dark;
   background-color: var(--c-black);
@@ -29,6 +30,12 @@
 /* body::-webkit-scrollbar {
   width: 0;
 } */
+
+hr {
+  border-width: 0;
+  border-bottom: var(--b1-gray);
+  margin-block: 32px;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

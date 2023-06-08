@@ -18,13 +18,26 @@
 }
 
 .active {
-  outline: 1px solid var(--c-primary);
+  outline: var(--b1-primary);
   color: var(--c-primary) !important;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    font-size: 14px;
+    gap: 18px;
+  }
 }
 
 @media (max-width: 992px) {
   .navbar {
-    font-size: 14px;
+    font-size: 12px;
     gap: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    display: none;
   }
 }

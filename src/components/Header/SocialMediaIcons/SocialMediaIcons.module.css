@@ -6,10 +6,16 @@
 
 .socialMedia__image {
   width: auto;
-  height: 16px;
+  height: 14px;
 }
 
 @media (max-width: 992px) {
+  .socialMedia {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
   .socialMedia {
     display: none;
   }
