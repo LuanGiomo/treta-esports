@@ -1,0 +1,14 @@
+.game__card {
+  height: 480px;
+  outline: 1px solid var(--c-gray-secondary);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.game__card:hover {
+  outline: 1px solid var(--c-primary);
+}
+
+.game__card__image {
+}

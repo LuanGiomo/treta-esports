@@ -1,14 +1,14 @@
 .mainContent {
   width: 100%;
-  padding: 32px;
+  height: 100%;
+  min-height: calc(100vh - 56px);
   margin: 0 auto;
+  padding: 32px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .mainContent {
     border-inline: var(--border);
-    width: 1400px;
-    min-height: calc(100vh - 56px);
-    height: 100%;
+    width: 1200px;
   }
 }
