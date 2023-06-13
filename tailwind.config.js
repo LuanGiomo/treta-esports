@@ -2,10 +2,17 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+    },
+    extend: {
+      boxShadow: {
+        'custom': 'inset 0 -1px 0 0 #52525b',
+      }
+    },
   },
   plugins: [],
 }

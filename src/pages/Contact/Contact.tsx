@@ -1,7 +1,5 @@
-// import styles from "./Contact.module.css";
-
 const Contact = () => {
-  return <p>Contact</p>;
+  return <h1 className="text-3xl text-red-700">Contact</h1>;
 };
 
 export default Contact;

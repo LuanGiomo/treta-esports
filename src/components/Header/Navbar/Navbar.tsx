@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styles from "./Navbar.module.css";
+// import styles from "./Navbar.module.css";
 import { Links } from "../Header";
 
 interface Props {
@@ -8,14 +8,14 @@ interface Props {
 
 const Navbar = ({ links }: Props) => {
   return (
-    <nav className={styles.navbar}>
+    <nav className="hidden xl:gap-6 xl:text-base lg:gap-5 md:text-sm md:gap-4 sm:text-xs sm:gap-3.5 sm:flex">
       {links.map((link) => (
-        <li key={link.name} className={styles.navbar__list}>
+        <li key={link.name} className="list-none">
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? [styles.navbar__list__item, styles.active].join(" ")
-                : styles.navbar__list__item
+                ? "text-red-700 outline outline-1 outline-red-700"
+                : "text-zinc-600 hover:text-red-900 no-underline"
             }
             to={link.path}
           >

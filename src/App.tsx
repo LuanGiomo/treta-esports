@@ -5,13 +5,12 @@ import Teams from "./pages/Teams/Teams";
 import Shop from "./pages/Shop/Shop";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
-import styles from "./App.module.css";
 
 function App() {
   return (
     <>
       <Header />
-      <main className={styles.mainContent}>
+      <main className="container xl:max-w-7xl p-8 mx-auto">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/teams" element={<Teams />}>

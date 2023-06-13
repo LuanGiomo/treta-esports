@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar/Navbar.tsx";
-import tretaLogo from "../../assets/treta.svg";
 import SocialMediaIcons from "./SocialMediaIcons/SocialMediaIcons.tsx";
-import styles from "./Header.module.css";
+import tretaLogo from "../../assets/treta.svg";
 
 export type Links = {
   name: string;
@@ -42,14 +41,10 @@ const Header = () => {
   ];
 
   return (
-    <header className={styles.header}>
-      <div className={styles.header__content}>
+    <header className="bg-black/80 backdrop-saturate-150 backdrop-blur-sm sticky z-10 top-0 shadow-custom">
+      <div className="flex justify-between items-center py-4 px-8 max-h-14">
         <Link to="/">
-          <img
-            className={styles.header__content__logo}
-            src={tretaLogo}
-            alt="Treta logo"
-          />
+          <img className="h-4 xl:h-5" src={tretaLogo} alt="Treta logo" />
         </Link>
         <Navbar links={navbarLinks} />
         <SocialMediaIcons socialMediaInfo={socialMediaNames} />
