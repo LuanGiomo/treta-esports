@@ -25,10 +25,16 @@
 }
 
 .game__card:hover::before {
-  /* mix-blend-mode: ; */
+  mix-blend-mode: color;
+}
+
+.active::before {
+  mix-blend-mode: color;
+  color: var(--c-white);
 }
 
 .game__card__name {
+  color: var(--c-gray-primary);
   position: absolute;
   padding: 16px 8px;
   margin: 12px;
@@ -38,12 +44,18 @@
   white-space: nowrap;
   transform: translateY(-24px);
 
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
 }
 
-.game__card:hover > .game__card__name {
+.game__card:hover > .game__card__name,
+.game__card.active > .game__card__name {
   transform: translateY(0);
+  color: var(--c-white);
   outline: var(--b1-primary);
+}
+
+.game__card.active > .game__card__name {
+  color: var(--c-white);
 }
 
 @media (max-width: 992px) {
@@ -77,5 +89,6 @@
 @media (max-width: 576px) {
   .game__card {
     height: 120px;
+    background-position: center 25%;
   }
 }

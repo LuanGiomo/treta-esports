@@ -14,7 +14,9 @@ function App() {
       <main className={styles.mainContent}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/teams" element={<Teams />} />
+          <Route path="/teams" element={<Teams />}>
+            <Route path=":name" element={<p>Oi</p>} />
+          </Route>
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

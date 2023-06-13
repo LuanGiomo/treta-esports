@@ -1,0 +1,44 @@
+.nextMatches {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, 280px);
+}
+
+.match {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  gap: 12px;
+  outline: var(--b1-gray);
+  padding: 12px;
+}
+
+.match__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-family: "Inter", sans-serif;
+  color: var(--c-gray-primary);
+  font-size: 14px;
+}
+
+.match__info__championship {
+  color: var(--c-white);
+  font-weight: 700;
+}
+
+.match__confrontation {
+  display: flex;
+  font-size: 20px;
+  gap: 8px;
+}
+
+.match__confrontation__trt {
+  color: var(--c-primary);
+}
+
+.match__confrontation__vs {
+  font-size: 12px;
+  color: var(--c-gray-primary);
+}
