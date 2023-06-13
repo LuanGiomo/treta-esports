@@ -1,14 +1,21 @@
 import homeImage from "../../assets/home-image.png";
-import styles from "./About.module.css";
 
 const About = () => {
   return (
-    <div className={styles.about}>
-      <h1 className={styles.about__title}>treta esports</h1>
-      <img className={styles.about__image} src={homeImage} alt="" />
-      <div className={styles.about__description}>
-        <h2 className={styles.about__description__subtitle}> Quem Somos</h2>
-        <p className={styles.about__description__text}>
+    <>
+      <h1 className="uppercase text-center text-xl text-zinc-300 mb-8 xl:text-4xl md:text-3xl sm:text-2xl">
+        treta esports
+      </h1>
+      <img
+        className="h-auto mx-auto float-none w-6/6 mb-12 md:w-3/6 md:float-right md:ml-6 sm:w-4/6"
+        src={homeImage}
+        alt=""
+      />
+      <div className="font-secondary text-center text-white">
+        <h2 className="mb-3 text-left text-zinc-300 text-xl font-semibold tracking-tight sm:text-2xl">
+          Quem Somos
+        </h2>
+        <p className="text-justify leading-7 text-zinc-400 md:text-left">
           Transformar diversão em competição e depois em resultados positivos,
           sem perder a alegria e o foco. Foi com esse desafio (e inspiração!)
           que a FURIA surgiu em 2017. Se no início a empreitada parecia ousada,
@@ -39,7 +46,7 @@ const About = () => {
           fundador, enquanto nos divertimos dentro e fora dos jogos.
         </p>
       </div>
-    </div>
+    </>
   );
 };
 

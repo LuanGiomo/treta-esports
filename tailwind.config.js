@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      sans: ['Inter', 'sans-serif'],
+      secondary: ['Inter', 'sans-serif'],
     },
     extend: {
       boxShadow: {
