@@ -10,7 +10,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/teams" element={<Teams />}>
-            <Route path=":name" element={<p>Oi</p>} />
+            <Route
+              path=":gameName"
+              element={<p className="text-zinc-300">Oi</p>}
+            />
           </Route>
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
