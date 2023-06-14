@@ -10,7 +10,7 @@ export default {
     },
     extend: {
       boxShadow: {
-        'custom': 'inset 0 -1px 0 0 #52525b',
+        'custom': 'inset 0 -1px 0 0',
       }
     },
   },

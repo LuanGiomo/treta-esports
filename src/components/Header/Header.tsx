@@ -41,7 +41,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-black/80 backdrop-saturate-150 backdrop-blur-sm sticky z-10 top-0 shadow-custom">
+    <header className="bg-black/80 backdrop-saturate-150 backdrop-blur-sm sticky z-10 top-0 shadow-custom shadow-zinc-600">
       <div className="flex justify-between items-center py-4 px-8 max-h-14">
         <Link to="/">
           <img className="h-4 xl:h-5" src={tretaLogo} alt="Treta logo" />
