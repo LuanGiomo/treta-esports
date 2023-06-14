@@ -11,11 +11,11 @@ const About = () => {
         src={homeImage}
         alt=""
       />
-      <div className="font-secondary text-center text-white">
+      <div className="font-secondary text-center">
         <h2 className="mb-3 text-left text-zinc-300 text-xl font-semibold tracking-tight sm:text-2xl">
           Quem Somos
         </h2>
-        <p className="text-justify leading-7 text-sm text-zinc-400 md:text-left sm:text-base sm:leading-7">
+        <p className="text-justify leading-7 text-sm text-zinc-400 selection:bg-red-700 selection:text-zinc-300 md:text-left sm:text-base sm:leading-7">
           Transformar diversão em competição e depois em resultados positivos,
           sem perder a alegria e o foco. Foi com esse desafio (e inspiração!)
           que a FURIA surgiu em 2017. Se no início a empreitada parecia ousada,
