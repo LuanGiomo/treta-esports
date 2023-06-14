@@ -1,5 +1,4 @@
 import Games from "./Games/Games";
-// import styles from "./Teams.module.css";
 
 const Teams = () => {
   return (
