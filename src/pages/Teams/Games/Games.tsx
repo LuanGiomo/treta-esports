@@ -9,12 +9,12 @@ export interface Game {
 }
 
 const Games = () => {
-  const [games, setGames] = useState<Game[]>([
+  const games: Game[] = [
     { name: "League of Legends", shortName: "lol" },
     { name: "Valorant", shortName: "val" },
     { name: "Counter-Strike: Global Offensive", shortName: "csgo" },
     { name: "Brawl Stars", shortName: "bs" },
-  ]);
+  ];
 
   const [selectedGame, setSelectedGame] = useState("");
 
@@ -51,7 +51,7 @@ const Games = () => {
           vitória nas arenas e nos jogos, surgiam mais seguidores da pantera..
         </p>
       )}
-      <Players game={selectedGame} />
+      {selectedGame && <Players game={selectedGame} />}
     </div>
   );
 };

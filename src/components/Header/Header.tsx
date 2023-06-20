@@ -19,17 +19,17 @@ const Header = () => {
       path: `/teams`,
     },
     {
-      name: "shop",
-      path: `/shop`,
-    },
-    {
       name: "about",
       path: `/about`,
     },
     {
-      name: "contact",
-      path: `/contact`,
+      name: "shop",
+      path: `/shop`,
     },
+    // {
+    //   name: "contact",
+    //   path: `/contact`,
+    // },
   ];
 
   const socialMediaNames = [

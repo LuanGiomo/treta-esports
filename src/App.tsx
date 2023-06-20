@@ -15,8 +15,8 @@ function App() {
               element={<p className="text-zinc-300">Oi</p>}
             />
           </Route>
-          <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
